@@ -13,5 +13,9 @@ nav tag, role="navigation", aria-label).
 ## Custom footer
 
 I added a footer ERB template with Bootstrap + social media links + internal pages links + copyright +
-link to website author + accessibility (footer tag, role="contentinfo", aria-label) +
+footer SCSS + link to website author + accessibility (footer tag, role="contentinfo", aria-label) +
 French translation + security for external links with target="blank" and rel="noopener noreferrer"
+
+## French translation
+
+I added 2 YAML files for French translation (Devise + App)
