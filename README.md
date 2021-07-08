@@ -18,4 +18,8 @@ French translation + security for external links with target="blank" and rel="no
 
 ## French translation
 
-I added 2 YAML files for French translation (Devise + App)
+I added 3 YAML files for French translation (Devise, Simple Form and App)
+
+## Ruby files
+
+I added 1 files for Pundit, 2 files for controllers and 1 file for Devise helpers.
