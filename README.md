@@ -16,10 +16,18 @@ I added a footer ERB template with Bootstrap + social media links + internal pag
 footer SCSS + link to website author + accessibility (footer tag, role="contentinfo", aria-label) +
 French translation + security for external links with target="blank" and rel="noopener noreferrer"
 
-## French translation
+## HTML files
 
-I added 3 YAML files for French translation (Devise, Simple Form and App)
+I added html files for flashes and layout.
+
+## Yaml files
+
+I added 3 YAML files for French translation in flashes.
 
 ## Ruby files
 
-I added 1 files for Pundit, 2 files for controllers and 1 file for Devise helpers.
+I added 1 files for Pundit, 2 files for controllers (app. and pages) and 1 file for Devise helpers (if Devise forms in no Devise views).
+
+## Devise french views
+
+I added all the Devise views with French text and better bootstrap CSS
