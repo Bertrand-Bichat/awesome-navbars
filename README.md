@@ -26,7 +26,7 @@ I added 3 YAML files for French translation in flashes.
 
 ## Ruby files
 
-I added 1 files for Pundit, 2 files for controllers (app. and pages) and 1 file for Devise helpers (if Devise forms in no Devise views).
+I added 1 files for Pundit, 2 files for controllers (app. and pages), 1 file for Devise helpers (if Devise forms in no Devise views) and 1 file for seeds.
 
 ## Devise french views
 
