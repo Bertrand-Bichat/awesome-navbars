@@ -24,7 +24,9 @@
     <%= render 'shared/flashes' %>
 
     <!-- navbar -->
-    <%= render 'shared/navbar' %>
+    <% unless devise_controller? %>
+      <%= render 'shared/navbar' %>
+    <% end %>
 
     <!-- main content -->
     <main role="main">
@@ -32,7 +34,9 @@
     </main>
 
     <!-- footer -->
-    <%= render 'shared/footer' %>
+    <% unless devise_controller? %>
+      <%= render 'shared/footer' %>
+    <% end %>
 
     <!-- noscript tag when JS brower is OFF -->
     <noscript>Votre navigateur web a bloqué le JavaScript. C'est important de le débloquer pour profiter de toutes les fonctionnallités de ce site web !</noscript>
