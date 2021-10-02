@@ -1,4 +1,6 @@
-## Le Wagon's navbar
+# Rails 5.2
+
+## Custom navbar
 
 Choose one of our templates:
 
