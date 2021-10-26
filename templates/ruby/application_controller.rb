@@ -14,31 +14,15 @@ class ApplicationController < ActionController::Base
   # Raise an alert if not authorized
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
-  # protected
-
-  # def after_update_path_for(resource)
-  #   stored_location_for(resource) || root_path
-  # end
-
-  # def update_resource(resource, params)
-  #   resource.update_without_password(params)
-
-  #   # Require current password if user is trying to change password.
-  #   # return super if params["password"]&.present?
-
-  #   # Allows user to update registration information without password.
-  #   # resource.update_without_password(params.except("current_password"))
-  # end
-
   private
 
-  # def after_sign_in_path_for(resource)
-  #   stored_location_for(resource) || root_path
-  # end
+  def after_sign_in_path_for(resource)
+    stored_location_for(resource) || root_path
+  end
 
-  # def after_sign_up_path_for(resource)
-  #   stored_location_for(resource) || root_path
-  # end
+  def after_sign_up_path_for(resource)
+    stored_location_for(resource) || root_path
+  end
 
   def user_not_authorized
     flash[:alert] = "Vous n'êtes pas autorisé à effectuer cette action."
@@ -61,7 +45,7 @@ class ApplicationController < ActionController::Base
   end
 
   def default_url_options
-   { host: ENV['DOMAIN'] || "localhost:3000" } #rajouter le nom de domaine en prod
+    { host: ENV['DOMAIN'] || "localhost:3000" } # rajouter le nom de domaine en prod
   end
 
   # equivalent a user_params (qu'est-ce qu'on autorise a etre modifie)
