@@ -1,0 +1,21 @@
+{
+  "addons": [
+    "heroku-postgresql",
+    "scheduler"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs",
+      "url": "heroku/ruby"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "scripts": {
+    "postdeploy":"bundle exec rake db:schema:load db:seed"
+  },
+  "stack": "heroku-20"
+}
