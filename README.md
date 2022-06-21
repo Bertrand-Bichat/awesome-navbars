@@ -33,3 +33,7 @@ I added 1 files for Pundit, 2 files for controllers (app. and pages), 1 file for
 ## Devise french views
 
 I added all the Devise views with French text and better bootstrap CSS
+
+## JSON files
+
+I added 1 file named "app.json" for Heroku setup.
