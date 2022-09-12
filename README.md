@@ -1,6 +1,6 @@
 # Rails 5.2
 
-These files are usefull for my `rails new` template.
+These files are usefull for my custom `rails new` template.
 
 ## Custom navbar
 
